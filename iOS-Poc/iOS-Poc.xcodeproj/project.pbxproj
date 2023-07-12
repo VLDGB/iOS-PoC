@@ -141,6 +141,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		3786ADEF2A5F17B6002FF0E2 /* Run Swiftllnt */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

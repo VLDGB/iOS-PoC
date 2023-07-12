@@ -5,15 +5,6 @@
 //  Created by Vlad_Rosca on 12.07.2023.
 //
 
-import UIKit
+import UIKit.UIViewController
 
-class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-
-
-}
-
+class ViewController: UIViewController { }
