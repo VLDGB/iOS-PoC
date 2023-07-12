@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3786ADED2A5F15A4002FF0E2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3786ADEC2A5F15A4002FF0E2 /* .gitignore */; };
 		37F487332A5E00A100A4F696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F487322A5E00A100A4F696 /* AppDelegate.swift */; };
 		37F487352A5E00A100A4F696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F487342A5E00A100A4F696 /* SceneDelegate.swift */; };
 		37F487372A5E00A100A4F696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F487362A5E00A100A4F696 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3786ADEC2A5F15A4002FF0E2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		37F4872F2A5E00A100A4F696 /* iOS-Poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F487322A5E00A100A4F696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F487342A5E00A100A4F696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				37F4873B2A5E00A500A4F696 /* Assets.xcassets */,
 				37F4873D2A5E00A500A4F696 /* LaunchScreen.storyboard */,
 				37F487402A5E00A500A4F696 /* Info.plist */,
+				3786ADEC2A5F15A4002FF0E2 /* .gitignore */,
 			);
 			path = "iOS-Poc";
 			sourceTree = "<group>";
@@ -77,6 +80,7 @@
 				37F4872B2A5E00A100A4F696 /* Sources */,
 				37F4872C2A5E00A100A4F696 /* Frameworks */,
 				37F4872D2A5E00A100A4F696 /* Resources */,
+				3786ADEF2A5F17B6002FF0E2 /* Run Swiftllnt */,
 			);
 			buildRules = (
 			);
@@ -125,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3786ADED2A5F15A4002FF0E2 /* .gitignore in Resources */,
 				37F4873F2A5E00A500A4F696 /* LaunchScreen.storyboard in Resources */,
 				37F4873C2A5E00A500A4F696 /* Assets.xcassets in Resources */,
 				37F4873A2A5E00A100A4F696 /* Main.storyboard in Resources */,
@@ -132,6 +137,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3786ADEF2A5F17B6002FF0E2 /* Run Swiftllnt */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftllnt";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37F4872B2A5E00A100A4F696 /* Sources */ = {
