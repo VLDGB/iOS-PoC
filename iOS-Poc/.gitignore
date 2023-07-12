@@ -2,6 +2,11 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## Build generated
+build/
+DerivedData/
+xcodebuild.log
+
 ## User settings
 *.xcuserstate
 
@@ -33,3 +38,6 @@ DerivedData/
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+# IDEs
+/.idea
